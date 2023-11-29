@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="style.css">    
     <style>
         /* en vrac :
 100% 100% 100% 0 auto border-box box-sizing 
@@ -100,14 +101,14 @@ justify-content list-style margin none padding
         <div class="carrousel_parent-ecrans" x-ref="parent"  @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
             <div id="ecran-1" class="carrousel_ecran">
                 <figure>
-                    <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
-                    <figcaption>Ecran 1</figcaption>
+                    <img src="../2023-r113-tp4-carrousel-AxelDutrieux/img/voujeaucourt-motoball-voujeaucourt-neuville-(photo-francis-reinoso)-1475339609.jpg" alt="image ecran 1">
+                    <figcaption>Motoball</figcaption>
                 </figure>
             </div>
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
-                    <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
-                    <figcaption>Ecran 2</figcaption>
+                    <img src="../2023-r113-tp4-carrousel-AxelDutrieux/img/les-bleus-face-aux-fidji-lors-de-leur-derniere-confrontation-en-2018-remportee-par-les-insulaires-(21-14)-cette-annee-la-france-a-gagne-sur-tapis-vert-(28-0)-photo-franck-fife-afp-1606142654.jpg" alt="image ecran 2">
+                    <figcaption>Rugby</figcaption>
                 </figure>
             </div>
             <div id="ecran-3" class="carrousel_ecran">
@@ -130,8 +131,8 @@ justify-content list-style margin none padding
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
-            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
+            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">Motoball</a></li>
+            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">Rugby</a></li>
             <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
             <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">ecran 4</a></li>
             <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">ecran 5</a></li>
